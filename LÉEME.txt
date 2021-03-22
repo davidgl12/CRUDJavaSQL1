@@ -1,0 +1,11 @@
+Para iniciar la aplicación primero corra el script ScriptPRODUCTOS en su DBMS para crear la base de datos PRODUCTOS
+Después corra el jar del proyecto (CRUDJavaSQL1 en carpeta dist)
+
+Para solucionar los problemas de autenticación más frecuentes haga lo siguiente:
+        1) Abre el SQL Server Configuration Manager
+        2) Network configuration - protocols - TCP/IP - properties
+        3) En pestaña "Protocol", ponle "Yes" a Enabled
+        4) Has lo mismo para todas las ip addresses en la otra pestaña
+	5) Reinicie la base de datos desde el Configuration Manager
+
+Si sigue dando dando errores intente copiar el archivo mssql-jdbc_auth-9.2.1.x64.dll en la carpeta System 32
